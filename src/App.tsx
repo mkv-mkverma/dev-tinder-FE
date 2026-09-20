@@ -3,14 +3,44 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <h1 className="container">Hi React Dev Tinder FE</h1>
-      <div className="bg-blue-500 text-white p-4 rounded-lg">Hello</div>
-
-      {/* daisyUI only - no Tailwind utilities */}
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-secondary">Secondary</button>
-      <div className="badge badge-accent">Accent badge</div>
-      <progress className="progress progress-info" value="60" max="100" />
+      <div className="navbar bg-base-100 shadow-sm">
+        <div className="flex-1">
+          <a className="btn btn-ghost text-xl">👨🏻‍💻 DevTinder</a>
+        </div>
+        <div className="flex gap-2">
+          <div className="dropdown dropdown-end">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar"
+            >
+              <div className="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                />
+              </div>
+            </div>
+            <ul
+              tabIndex={-1}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li>
+                <a>Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,2 +1,12 @@
 @import url("tailwindcss");
 @plugin "daisyui";
+
+// How to change theme
+// https://daisyui.com/docs/config/
+// @plugin "daisyui" {
+//   themes:
+//     light --default,
+//     dark --prefersdark;
+//   root: ":root";
+//   logs: true;
+// }
